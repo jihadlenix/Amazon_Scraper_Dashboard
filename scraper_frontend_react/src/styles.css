@@ -1,0 +1,39 @@
+
+:root { --bg:#0b1020; --card:#121a33; --fg:#e9eefc; --muted:#97a1bf; --accent:#4da3ff; --ok:#2ecc71; --err:#ff5c5c; }
+*{ box-sizing: border-box }
+html, body, #root { height: 100% }
+body { margin:0; background: var(--bg); color: var(--fg); font-family: ui-sans-serif, system-ui, Arial }
+a { color: var(--accent) }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 20px }
+header { display:flex; align-items:baseline; gap:12px; }
+header h2 { margin:0 }
+header .sub { color: var(--muted); font-size: 13px }
+
+.controls { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 16px 0 }
+.card { background: var(--card); padding: 12px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,.25) }
+.row { display:flex; gap: 8px; flex-wrap: wrap; }
+input, select, button { padding: 10px 12px; border-radius: 10px; border:1px solid #2a355f; background:#0f1631; color:var(--fg) }
+button { background: linear-gradient(90deg, #2b63ff, #6a4df6); border: none; cursor: pointer; }
+button:hover { filter: brightness(1.1) }
+
+.table-wrap { background: var(--card); padding: 10px; border-radius: 12px; margin-top: 12px; }
+.tbl { width: 100%; border-collapse: collapse; font-size:14px }
+.tbl th, .tbl td { padding: 10px; border-bottom: 1px solid #2a355f; vertical-align: middle; }
+.tbl th { color: var(--muted); text-align: left }
+.tbl img { max-height: 60px; border-radius: 6px }
+
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); display:flex; align-items:center; justify-content:center; flex-direction: column; gap: 10px; z-index: 10 }
+.hint { color: var(--muted); font-size: 14px }
+
+.spinner { display:flex; gap:12px }
+.spinner div { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); animation: b 1s infinite ease-in-out }
+.spinner div:nth-child(2){ animation-delay: .15s }
+.spinner div:nth-child(3){ animation-delay: .3s }
+@keyframes b { 0%, 80%, 100% { transform: scale(0) } 40% { transform: scale(1) } }
+
+.toast { position: fixed; right: 16px; bottom: 16px; padding: 12px 16px; border-radius: 10px; background:#243058; color: var(--fg); z-index: 20; box-shadow: 0 6px 24px rgba(0,0,0,.35) }
+.toast.success { background: #1f5a3b }
+.toast.error { background: #5a1f1f }
+
+footer { margin: 16px 0; color: var(--muted); font-size: 12px; text-align: center }

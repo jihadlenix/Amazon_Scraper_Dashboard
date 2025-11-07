@@ -1,0 +1,71 @@
+##########################
+# Backend (FastAPI / Python)
+##########################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+*.so
+*.egg-info/
+.env
+.venv/
+venv/
+env/
+ENV/
+*.db
+*.sqlite3
+*.log
+*.pid
+
+# Test & coverage
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+htmlcov/
+
+# Build / dist
+build/
+dist/
+*.spec
+
+##########################
+# Frontend (React + Vite)
+##########################
+scraper_frontend_react/node_modules/
+scraper_frontend_react/dist/
+scraper_frontend_react/build/
+scraper_frontend_react/.vite/
+scraper_frontend_react/.cache/
+scraper_frontend_react/*.log
+scraper_frontend_react/.env
+scraper_frontend_react/.env.*
+scraper_frontend_react/.DS_Store
+
+##########################
+# Shared project ignores
+##########################
+# IDEs and Editors
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+*.pid
+docker-compose.override.yml
+*.tar
+*.lock
+
+# Temp
+tmp/
+temp/
+logs/
