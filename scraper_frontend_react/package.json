@@ -1,12 +1,14 @@
-
 {
-  "name": "scraper-frontend",
+  "name": "scraper-frontend-react",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview --port 5173"
   },
   "dependencies": {
