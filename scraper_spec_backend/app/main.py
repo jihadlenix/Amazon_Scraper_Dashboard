@@ -13,9 +13,9 @@ app = FastAPI(title="Amazon Scraper API", version="1.1.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    allow_credentials=False, 
 )
 
 # simple health in main
