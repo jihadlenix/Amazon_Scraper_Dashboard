@@ -137,3 +137,4 @@ Then open [http://localhost:5173](http://localhost:5173).
 
 ### 4. Deployment link
 https://amazon-scraper-dashboard.onrender.com/
+https://amazon-scraper-dashboard-7c7t-git-main-jihads-projects-95bc20fd.vercel.app/
