@@ -7,7 +7,7 @@ import ProductTable from './components/ProductTable'
 import Controls, { ScrapeParams } from './components/Controls'
 
 export default function App() {
-  const API_BASE = import.meta.env.VITE_API_BASE || 'http://127.0.0.1:8000'
+  const API_BASE = import.meta.env.VITE_API_BASE
 
   const [items, setItems] = useState<Product[]>([])
   const [loading, setLoading] = useState(false)
