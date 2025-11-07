@@ -134,3 +134,6 @@ npm run dev
 ```
 
 Then open [http://localhost:5173](http://localhost:5173).
+
+### 4. Deployment link
+https://amazon-scraper-dashboard.onrender.com/
